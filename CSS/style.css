@@ -1,0 +1,189 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Spartan", sans-serif;
+    background-color: #EFF3EA;
+}
+
+.app {
+    max-width: 450px;
+    width: 90%;
+    background-image: url(../images/weather.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 80px auto;
+}
+
+
+.search {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+
+.search input {
+    padding: 10px 15px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    flex: 1;
+    margin-right: 20px;
+    color: black;
+}
+@media (max-width:768px) {
+    .search input {
+        margin-right: 10px;
+    }
+}
+.search button {
+    background-color: #fff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: none;
+}
+.search button img{
+    width: 20px;
+    cursor: pointer;
+}
+.content {
+    text-align: center;
+    margin-top: 20px;
+    display: none;
+}
+
+.content .temp {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+}
+.content .city {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+}
+.content .details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.content .details .col {
+    display: flex;
+    align-items: center;
+    
+}
+.content .details .col img {
+   width: 50px;
+   margin-right: 20px;
+    
+}
+@media (max-width:768px) {
+    .content .details .col img {
+        width: 35px;
+        margin-right: 10px;
+    }
+}
+.content .details .col .detail  {
+   color: #fff;
+}
+.content .details .col .detail span {
+   font-size: 16px;
+   font-weight: 600;
+}
+@media (max-width:768px) {
+    .content .details .col .detail span {
+       font-size: 14px;
+    }
+}
+.content .details .col .detail p {
+   font-size: 16px;
+   font-weight: 500;
+}
+@media (max-width:768px) {
+    .content .details .col .detail p {
+       font-size: 14px;
+    }
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+}
+.error {
+    width: 300px;
+    height: 200px;
+    background-color: #fff;
+    border: 3px solid rgba(0, 0, 0, 0.377);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #777;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    z-index: 1001;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: 0 10px 50px rgba(255, 255, 255, 0.5);
+}
+.close {
+    background-color: rgb(12, 82, 231);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: -180px;
+    top: -75px;
+    cursor: pointer;
+
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.row .paragraph {
+    margin-left: 5px;
+    font-size: 40px;
+    color: rgb(20, 20, 20);
+}
+.mark {
+    background-color: red;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 50%;
+}
+.paragraph2 {
+    color: #aaa;
+    font-style: italic;
+    font-size: 15px;
+}
